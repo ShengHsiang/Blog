@@ -52,24 +52,27 @@
             </div>
             <div class="four wide column">
                 <h4 class="ui inverted header m-text-spaced m-text-thin">最新文章</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">用戶故事 (User Story) </a>
-                    <a href="#" class="item">用戶故事 (User Story) </a>
-                    <a href="#" class="item">用戶故事 (User Story) </a>
+                <div id="newBlog-container">
+                    <div class="ui inverted link list" th:fragment="newBlogList">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newBlogs}" th:text="${blog.title}">用戶故事 (User Story) </a>
+                        <!--/*-->
+                        <a href="#" class="item">用戶故事 (User Story) </a>
+                        <a href="#" class="item">用戶故事 (User Story) </a>
+                        <!--*/-->
+                    </div>
                 </div>
             </div>
             <div class="four wide column">
                 <h4 class="ui inverted header m-text-spaced m-text-thin">聯繫我</h4>
                 <div class="ui inverted link list">
-                    <a href="#" class="item">Line ID: nj830606</a>
-                    <a href="#" class="item">Email: qzwxsa1234@gmail.com</a>
-                    <a href="#" class="item"></a>
+                    <a href="#" class="item">Line ID: <span th:text="#{index.lineId}">nj83</span></a><br>
+                    <a href="#" class="item">Email: <span th:text="#{index.email}">qzwxsa1234@gmail.com</span></a>
                 </div>
             </div>
             <div class="five wide column">
-                <h4 class="ui inverted header m-text-spaced m-text-thin">自我介紹</h4>
+                <h4 class="ui inverted header m-text-spaced m-text-thin">關於我</h4>
                 <div class="ui inverted link list">
-                    <p class="m-opacity-tiny m-text">小時候我以為長大後能拯救世界，等長大後才發現整個世界都拯救不了我。<br><br></p>
+                    <p class="m-opacity-tiny m-text">"You can have whatever you want  —  if you’re willing to do whatever it takes."<br><br></p>
                 </div>
             </div>
         </div>
@@ -82,8 +85,10 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
     <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
-    <script src="../static/lib/waypoints/jquery.waypoints.min.js"
-            th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    <script>
+        $('#newBlog-container').load(/*[[@{/footer/newBlog}]]*/"/footer/newBlog");
+    </script>
 </th:block>
 </body>
 </html>
