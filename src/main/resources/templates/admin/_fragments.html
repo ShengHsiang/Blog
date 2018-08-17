@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="head(title)">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">Blog</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css"
+          th:href="@{/lib/editormd/css/editormd.min.css}">
+    <!--
+        <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
+        <link rel="stylesheet" href="../static/css/animate.css" th:href="@{/css/animate.css}">
+        <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
+    -->
+</head>
+<body>
+<!--導航-->
+<!--導航-->
+<nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui purple header item">管理後台</h2>
+            <a href="#" th:href="@{/admin/blogs}" class="item m-mobile-hide m-item" th:classappend="${n==1} ? 'active'"><i
+                    class="mini home icon"></i>Blog</a>
+            <a href="#" th:href="@{/admin/types}" class="item m-mobile-hide m-item" th:classappend="${n==2} ? 'active'"><i
+                    class="mini folder icon"></i>分類</a>
+            <a href="#" th:href="@{/admin/tags}" class="item m-mobile-hide m-item"
+               th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>標籤</a>
+            <div class="right menu m-mobile-hide m-item">
+                <div class="ui dropdown item">
+                    <div class="text">
+                        <img src="../../static/images/emmaPhoto.jpg" th:src="@{${session.user.avatar}}"
+                             class="ui avatar image" width="100" height="100">
+                        <span th:text="${session.user.nickname}">Sheng</span>
+                        <i class="dropdown icon"></i>
+                    </div>
+                    <div class="menu">
+                        <a href="#" th:href="@{/admin/logout}" class="item">登出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" class="menu toggle m-right-top m-mobile-show">
+        <i class="inverted large black sidebar icon"></i>
+    </a>
+</nav>
+
+<footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/emmaPhoto.jpg" th:src="@{${session.user.avatar}}"
+                             class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">最新文章</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">用戶故事 (User Story) </a>
+                    <a href="#" class="item">用戶故事 (User Story) </a>
+                    <a href="#" class="item">用戶故事 (User Story) </a>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">聯繫我</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item">Line ID: nj830606</a>
+                    <a href="#" class="item">Email: qzwxsa1234@gmail.com</a>
+                    <a href="#" class="item"></a>
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-text-spaced m-text-thin">自我介紹</h4>
+                <div class="ui inverted link list">
+                    <p class="m-opacity-tiny m-text">小時候我以為長大後能拯救世界，等長大後才發現整個世界都拯救不了我。<br><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-opacity-tiny m-text-spaced m-text-thin">Copyright © 2018 Blog Designed by Sheng</p>
+    </div>
+</footer>
+<th:block th:fragment="script">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+    <script src="../../static/lib/editormd/editormd.min.js" th:src="@{/lib/editormd/editormd.min.js}"></script>
+    <!--
+            <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+            <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+            <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
+    -->
+</th:block>
+</body>
+</html>

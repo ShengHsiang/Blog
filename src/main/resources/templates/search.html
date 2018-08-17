@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head th:replace="_fragments :: head(~{::title})">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜尋</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/me.css">
+</head>
+
+<body>
+    <!--導航-->
+    <nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui purple header item">Blog</h2>
+                <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
+                <a href="#" class="active item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="mini clone icon"></i>歸檔</a>
+                <a href="#" class="item m-mobile-hide m-item"><i class="mini info icon"></i>關於我</a>
+                <div class="right item m-mobile-hide m-item">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Search....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="menu toggle m-right-top m-mobile-show">
+        <i class="inverted large black sidebar icon"></i>
+    </a>
+
+    </nav>
+    <!--中間內容-->
+    <div class="m-padded-tb-big m-container-small">
+        <div class="ui container">
+            <!--header-->
+            <div class="ui top attached segment">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <h3 class="ui purple header">搜尋結果</h3>
+                    </div>
+                    <div class="column right aligned">
+                        共
+                        <h2 class="ui orange header m-inline-block m-text-thin" th:text="${page.totalElements}"> 5 </h2> 個
+                    </div>
+                </div>
+            </div>
+            <!--content-->
+            <div class="ui top attached purple segment">
+                <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large" th:each="blog : ${page.content}">
+                    <div class="ui middle aligned mobile reversed stackable grid">
+
+                        <div class="eleven wide column">
+                            <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">漢娜的遺言</a></h3>
+                            <p class="m-text" th:text="|${blog.description}.....|">一名青少女漢娜·貝克（凱瑟琳·蘭福德 飾演）突然割腕自殺身亡後，讓親友們震驚不已，些許時日後，漢娜的朋友克雷·詹森（狄倫·明尼特
+                                飾演）卻收到她死前錄製的一系列錄音帶，錄音內容是她親口揭露為何會選擇走上絕路，造就這場悲劇的十三個原因，而背後的黑暗秘密，也將逐漸攤在陽光下</p>
+
+                            <div class="ui stackable grid">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="../static/images/emmaPhoto.jpg"
+                                                 th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image"
+                                                 width="100" height="100">
+                                        </div>
+                                        <div class="item">
+                                            <a href="#" class="header" th:text="${blog.user.nickname}">Emma</a>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2018-06-06</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i><span th:text="${blog.views}">1314</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" target="_blank"
+                                       class="ui purple basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="five wide column">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                                <img src="../static/images/01.jpg" th:src="@{${blog.firstPicture}}" alt=""
+                                     class="ui rounded image">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--footer-->
+            <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
+                <div class="ui middle aligned two column grid">
+                    <div class="column">
+                        <a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}"
+                           class="ui mini purple basic button">上一頁</a>
+                    </div>
+                    <div class="column right aligned">
+                        <a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}"
+                           class="ui mini purple basic button">下一頁</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!--底部-->
+    <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="https://www.shareicon.net/download/2015/10/04/112034_man.svg" class="ui rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header m-text-spaced m-text-thin">最新文章</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">用戶故事 (User Story) </a>
+                        <a href="#" class="item">用戶故事 (User Story) </a>
+                        <a href="#" class="item">用戶故事 (User Story) </a>
+                    </div>
+                </div>
+                <div class="four wide column">
+                    <h4 class="ui inverted header m-text-spaced m-text-thin">聯繫我</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">Line ID: nj830606</a>
+                        <a href="#" class="item">Email: qzwxsa1234@gmail.com</a>
+                        <a href="#" class="item"></a>
+                    </div>
+                </div>
+                <div class="five wide column">
+                    <h4 class="ui inverted header m-text-spaced m-text-thin">自我介紹</h4>
+                    <div class="ui inverted link list">
+                        <p class="m-opacity-tiny m-text">小時候我以為長大後能拯救世界，等長大後才發現整個世界都拯救不了我。<br><br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-opacity-tiny m-text-spaced m-text-thin">Copyright © 2018 Blog Designed by Sheng</p>
+        </div>
+    </footer>
+    <!--/*/<th:block th:replace="_fragments :: script">/*/-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.3.1/dist/semantic.min.js"></script>
+    <!--/*/</th:block>/*/-->
+    <script>
+        $('.menu.toggle').click(function() {
+            $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+    </script>
+</body>
+
+</html>

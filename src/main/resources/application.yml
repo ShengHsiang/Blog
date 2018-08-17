@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+  thymeleaf:
+    mode: HTML
+
+
+
+comment.avatar: /images/matt.jpg

@@ -1,0 +1,10 @@
+2018-06-18 01:08:21.558  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 3432 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-06-18 01:08:21.559  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: prod
+2018-06-18 01:08:23.994  WARN 3432 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-18 01:08:24.094  WARN 3432 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-06-18 01:08:24.424  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 3.096 seconds (JVM running for 3.663)
+2018-06-18 01:09:36.182  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 3432 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-06-18 01:09:36.182  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: prod
+2018-06-18 01:09:36.683  WARN 3432 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-18 01:09:36.716  WARN 3432 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2018-06-18 01:09:36.810  INFO 3432 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 0.696 seconds (JVM running for 76.049)
