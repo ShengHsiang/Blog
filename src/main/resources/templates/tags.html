@@ -44,162 +44,82 @@
                     <h3 class="ui purple header">標籤</h3>
                 </div>
                 <div class="column right aligned">
-                    共
-                    <h2 class="ui orange header m-inline-block m-text-thin"> 5 </h2> 個
+                    共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="| ${#arrays.length(tags)} |"> 5 </h2> 個
                 </div>
             </div>
         </div>
         <div class="ui bottom attached segment m-padded-tb-large">
-            <div class="ui tag large labels">
-                <a href="#" target="_blank" class="ui purple label m-margin-tb-tiny">美劇心得
-                    <div class="detail">16</div>
-                </a>
-                <a href="#" target="_blank" class="ui label m-margin-tb-tiny">台北美食
-                    <div class="detail">12</div>
-                </a>
-                <a href="#" target="_blank" class="ui label m-margin-tb-tiny">高雄美食
-                    <div class="detail">5</div>
-                </a>
-                <a href="#" target="_blank" class="ui label m-margin-tb-tiny">韓劇心得
-                    <div class="detail">4</div>
-                </a>
-                <a href="#" target="_blank" class="ui label m-margin-tb-tiny">Kiehl's
-                    <div class="detail">3</div>
-                </a>
-            </div>
+            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic large left pointing label m-margin-tb-tiny" th:classappend="${tag.id == activeTagId} ? 'purple'"
+               th:each="tag : ${tags}"><span th:text="${tag.name}">美劇心得</span>
+                <div class="detail" th:text="${#arrays.length(tag.blogs)}">16</div>
+            </a>
         </div>
         <!--content-->
         <div class="ui top attached purple segment">
-            <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large">
+            <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large" th:each="blog : ${page.content}">
                 <div class="ui middle aligned mobile reversed stackable grid">
+
                     <div class="eleven wide column">
-                        <h3 class="ui header">漢娜的遺言</h3>
-                        <p class="m-text">一名青少女漢娜·貝克（凱瑟琳·蘭福德 飾演）突然割腕自殺身亡後，讓親友們震驚不已，些許時日後，漢娜的朋友克雷·詹森（狄倫·明尼特
+                        <h3 class="ui header"><a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="m-black" th:text="${blog.title}">漢娜的遺言</a></h3>
+                        <p class="m-text" th:text="|${blog.description}.....|">一名青少女漢娜·貝克（凱瑟琳·蘭福德 飾演）突然割腕自殺身亡後，讓親友們震驚不已，些許時日後，漢娜的朋友克雷·詹森（狄倫·明尼特
                             飾演）卻收到她死前錄製的一系列錄音帶，錄音內容是她親口揭露為何會選擇走上絕路，造就這場悲劇的十三個原因，而背後的黑暗秘密，也將逐漸攤在陽光下</p>
+
                         <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/emmaPhoto.jpg" alt="" class="ui avatar image"
-                                             width="100" height="100">
-                                    </div>
-                                    <div class="item">
-                                        <a href="#" class="header">Emma</a>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2018-06-06
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 1314
+                            <div class="row">
+                                <div class="eleven wide column">
+                                    <div class="ui mini horizontal link list">
+                                        <div class="item">
+                                            <img src="../static/images/emmaPhoto.jpg"
+                                                 th:src="@{${blog.user.avatar}}" alt="" class="ui avatar image"
+                                                 width="100" height="100">
+                                        </div>
+                                        <div class="item">
+                                            <a href="#" class="header" th:text="${blog.user.nickname}">Emma</a>
+                                        </div>
+                                        <div class="item">
+                                            <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2018-06-06</span>
+                                        </div>
+                                        <div class="item">
+                                            <i class="eye icon"></i><span th:text="${blog.views}">1314</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="right aligned five wide column">
+                                    <a href="#" th:href="@{/types/{id}(id=${blog.type.id})}"
+                                       class="ui purple basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
+                                </div>
                             </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui purple basic label m-padded-tiny m-text-thin">美劇心得</a>
+                            <!--標籤-->
+                            <div class="row">
+                                <div class="column">
+                                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic left pointing label m-padded-small m-text-thin" th:classappend="${tag.id == activeTagId} ? 'purple'"
+                                       th:each="tag : ${blog.tags}" th:text="${tag.name}">台北居酒屋</a>
+                                </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <img src="../static/images/01.jpg" alt="" class="ui rounded image">
+                        <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank">
+                            <img src="../static/images/01.jpg" th:src="@{${blog.firstPicture}}" alt=""
+                                 class="ui rounded image">
                         </a>
                     </div>
 
                 </div>
-
             </div>
-            <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large">
-                <div class="ui middle aligned mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">漢娜的遺言</h3>
-                        <p class="m-text">一名青少女漢娜·貝克（凱瑟琳·蘭福德 飾演）突然割腕自殺身亡後，讓親友們震驚不已，些許時日後，漢娜的朋友克雷·詹森（狄倫·明尼特
-                            飾演）卻收到她死前錄製的一系列錄音帶，錄音內容是她親口揭露為何會選擇走上絕路，造就這場悲劇的十三個原因，而背後的黑暗秘密，也將逐漸攤在陽光下</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/emmaPhoto.jpg" alt="" class="ui avatar image"
-                                             width="100" height="100">
-                                    </div>
-                                    <div class="item">
-                                        <a href="#" class="header">Emma</a>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2018-06-06
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 1314
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui purple basic label m-padded-tiny m-text-thin">美劇心得</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <img src="../static/images/01.jpg" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large">
-                <div class="ui middle aligned mobile reversed stackable grid">
-                    <div class="eleven wide column">
-                        <h3 class="ui header">漢娜的遺言</h3>
-                        <p class="m-text">一名青少女漢娜·貝克（凱瑟琳·蘭福德 飾演）突然割腕自殺身亡後，讓親友們震驚不已，些許時日後，漢娜的朋友克雷·詹森（狄倫·明尼特
-                            飾演）卻收到她死前錄製的一系列錄音帶，錄音內容是她親口揭露為何會選擇走上絕路，造就這場悲劇的十三個原因，而背後的黑暗秘密，也將逐漸攤在陽光下</p>
-                        <div class="ui stackable grid">
-                            <div class="eleven wide column">
-                                <div class="ui mini horizontal link list">
-                                    <div class="item">
-                                        <img src="../static/images/emmaPhoto.jpg" alt="" class="ui avatar image"
-                                             width="100" height="100">
-                                    </div>
-                                    <div class="item">
-                                        <a href="#" class="header">Emma</a>
-                                    </div>
-                                    <div class="item">
-                                        <i class="calendar icon"></i> 2018-06-06
-                                    </div>
-                                    <div class="item">
-                                        <i class="eye icon"></i> 1314
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right aligned five wide column">
-                                <a href="#" target="_blank"
-                                   class="ui purple basic label m-padded-tiny m-text-thin">美劇心得</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="five wide column">
-                        <a href="#" target="_blank">
-                            <img src="../static/images/01.jpg" alt="" class="ui rounded image">
-                        </a>
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
         <!--footer-->
-        <div class="ui bottom attached segment">
+        <div class="ui bottom attached segment" th:if="${page.totalPages}>1">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <a href="#" class="ui mini purple basic button">上一頁</a>
+                    <a href="#" th:href="@{/tags/{id}(id=${activeTagId},page=${page.number}-1)}" th:unless="${page.first}"
+                       class="ui mini purple basic button">上一頁</a>
                 </div>
                 <div class="column right aligned">
-                    <a href="#" class="ui mini purple basic button">下一頁</a>
+                    <a href="#" th:href="@{/tags/{id}(id=${activeTagId},page=${page.number}+1)}" th:unless="${page.last}"
+                       class="ui mini purple basic button">下一頁</a>
                 </div>
             </div>
         </div>

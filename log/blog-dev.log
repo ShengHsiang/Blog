@@ -2033,3 +2033,876 @@ Caused by: java.lang.NumberFormatException: For input string: "{id}(id=${activeT
 2018-08-17 13:05:44.130  INFO 17440 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : types
 2018-08-17 13:05:44.167  INFO 17440 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/123, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]]
 2018-08-17 13:05:44.171  INFO 17440 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 16:59:58.610  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 8464 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-08-17 16:59:58.611 DEBUG 8464 --- [restartedMain] com.sheng.BlogApplication                : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-08-17 16:59:58.612  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: dev
+2018-08-17 16:59:58.648  INFO 8464 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1fd6ba99: startup date [Fri Aug 17 16:59:58 CST 2018]; root of context hierarchy
+2018-08-17 17:00:00.433  INFO 8464 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$643193e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-17 17:00:00.974  INFO 8464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-17 17:00:01.009  INFO 8464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-17 17:00:01.010  INFO 8464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-17 17:00:01.015  INFO 8464 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Local\GitHubDesktop\bin;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Roaming\npm;.]
+2018-08-17 17:00:01.115  INFO 8464 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-17 17:00:01.117  INFO 8464 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2467 ms
+2018-08-17 17:00:01.251  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-17 17:00:01.256  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-17 17:00:01.256  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-17 17:00:01.256  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-17 17:00:01.256  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-17 17:00:01.387  INFO 8464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-17 17:00:01.562  INFO 8464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-17 17:00:01.600  INFO 8464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:00:01.612  INFO 8464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-17 17:00:01.681  INFO 8464 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-17 17:00:01.682  INFO 8464 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-17 17:00:01.728  INFO 8464 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-17 17:00:01.882  INFO 8464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-17 17:00:03.565  INFO 8464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:00:03.919  INFO 8464 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-17 17:00:04.354  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:00:04.622  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1fd6ba99: startup date [Fri Aug 17 16:59:58 CST 2018]; root of context hierarchy
+2018-08-17 17:00:04.656  WARN 8464 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-17 17:00:04.693  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.694  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:00:04.694  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.input(org.springframework.ui.Model)
+2018-08-17 17:00:04.694  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.694  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:00:04.694  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.post(com.sheng.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-08-17 17:00:04.695  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2018-08-17 17:00:04.696  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.696  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.loginPage()
+2018-08-17 17:00:04.698  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.input(org.springframework.ui.Model)
+2018-08-17 17:00:04.698  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:00:04.698  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.deleteTag(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.698  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.post(com.sheng.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.699  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.editTag(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.699  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.editPost(com.sheng.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.700  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.701  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:00:04.701  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.input(org.springframework.ui.Model)
+2018-08-17 17:00:04.701  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.701  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.post(com.sheng.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.701  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.editPost(com.sheng.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:00:04.702  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.sheng.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.702  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.sheng.web.CommentController.post(com.sheng.po.Comment,javax.servlet.http.HttpSession)
+2018-08-17 17:00:04.704  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:00:04.705  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.sheng.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2018-08-17 17:00:04.705  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.705  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.705  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:00:04.707  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-17 17:00:04.707  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-17 17:00:04.742  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:00:04.742  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:00:04.755  INFO 8464 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-08-17 17:00:04.872  INFO 8464 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-17 17:00:05.173  INFO 8464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-17 17:00:05.198  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-17 17:00:05.200  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-17 17:00:05.204  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-17 17:00:05.231  INFO 8464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-17 17:00:05.233  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 6.965 seconds (JVM running for 8.014)
+2018-08-17 17:00:19.633  INFO 8464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-17 17:00:19.633  INFO 8464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-17 17:00:19.652  INFO 8464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2018-08-17 17:00:19.683  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/7, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 7, {}]]
+2018-08-17 17:00:19.695  WARN 8464 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 17:00:19.794  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:00:20.345  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/123, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]]
+2018-08-17 17:00:20.354  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:00:21.386  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:00:21.392  WARN 8464 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 17:00:21.423  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:03:32.412  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:03:32.416  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:03:32.432 ERROR 8464 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "tags": An error happened during template parsing (template: "class path resource [templates/tags.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/tags.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+Caused by: org.attoparser.ParseException: Exception evaluating SpringEL expression: "tag.id" (template: "tags" - line 53, col 25)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Exception evaluating SpringEL expression: "tag.id" (template: "tags" - line 53, col 25)
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:290) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	... 54 common frames omitted
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 78 common frames omitted
+
+2018-08-17 17:03:32.439 ERROR 8464 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/tags.html]")] with root cause
+
+org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property or field 'id' cannot be found on null
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:213) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:104) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.access$000(PropertyOrFieldReference.java:51) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference$AccessorLValue.getValue(PropertyOrFieldReference.java:407) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:89) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:111) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:334) ~[spring-expression-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.thymeleaf.spring5.expression.SPELVariableExpressionEvaluator.evaluate(SPELVariableExpressionEvaluator.java:263) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.VariableExpression.executeVariableExpression(VariableExpression.java:165) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:66) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.resolveParameters(LinkExpression.java:337) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.LinkExpression.executeLinkExpression(LinkExpression.java:283) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.SimpleExpression.executeSimple(SimpleExpression.java:85) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:109) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.Expression.execute(Expression.java:138) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:126) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleOpenElementEnd(TemplateHandlerAdapterMarkupHandler.java:304) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:278) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleOpenElementEnd(OutputExpressionInlinePreProcessorHandler.java:186) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleOpenElementEnd(InlinedOutputExpressionMarkupHandler.java:124) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleOpenElementEnd(HtmlElement.java:109) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleOpenElementEnd(HtmlMarkupHandler.java:297) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleOpenElementEnd(MarkupEventProcessorHandler.java:402) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:159) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-08-17 17:06:09.447  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:06:09.452  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:22.345  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:06:22.349  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:29.452  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:06:29.474  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:29.557  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:06:29.567  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:36.077  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:06:36.085  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:36.175  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:06:36.184  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:06:50.585  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:06:50.590  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:16.638  INFO 8464 --- [Thread-5] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1fd6ba99: startup date [Fri Aug 17 16:59:58 CST 2018]; root of context hierarchy
+2018-08-17 17:07:16.640  INFO 8464 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-17 17:07:16.640  INFO 8464 --- [Thread-5] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-17 17:07:16.642  INFO 8464 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:07:16.644  INFO 8464 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-17 17:07:16.660  INFO 8464 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-08-17 17:07:16.941  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 8464 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-08-17 17:07:16.941 DEBUG 8464 --- [restartedMain] com.sheng.BlogApplication                : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-08-17 17:07:16.941  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: dev
+2018-08-17 17:07:16.946  INFO 8464 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@660871a4: startup date [Fri Aug 17 17:07:16 CST 2018]; root of context hierarchy
+2018-08-17 17:07:17.605  INFO 8464 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$643193e0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-17 17:07:17.699  INFO 8464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-17 17:07:17.700  INFO 8464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-17 17:07:17.700  INFO 8464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-17 17:07:17.720  INFO 8464 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-17 17:07:17.720  INFO 8464 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 774 ms
+2018-08-17 17:07:17.778  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-17 17:07:17.779  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-17 17:07:17.779  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-17 17:07:17.779  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-17 17:07:17.779  INFO 8464 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-17 17:07:17.847  INFO 8464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2018-08-17 17:07:17.852  INFO 8464 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2018-08-17 17:07:17.861  INFO 8464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:07:17.861  INFO 8464 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-17 17:07:17.899  INFO 8464 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-17 17:07:18.800  INFO 8464 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:07:18.926  INFO 8464 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-17 17:07:19.175  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:07:19.332  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@660871a4: startup date [Fri Aug 17 17:07:16 CST 2018]; root of context hierarchy
+2018-08-17 17:07:19.344  WARN 8464 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-17 17:07:19.352  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.352  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:07:19.352  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.input(org.springframework.ui.Model)
+2018-08-17 17:07:19.352  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.353  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:07:19.353  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.post(com.sheng.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-08-17 17:07:19.353  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2018-08-17 17:07:19.353  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.354  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.loginPage()
+2018-08-17 17:07:19.355  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.input(org.springframework.ui.Model)
+2018-08-17 17:07:19.355  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:07:19.355  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.deleteTag(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.356  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.post(com.sheng.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.356  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.editTag(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.356  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.editPost(com.sheng.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.input(org.springframework.ui.Model)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.post(com.sheng.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.359  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.editPost(com.sheng.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:07:19.360  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.sheng.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.360  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.sheng.web.CommentController.post(com.sheng.po.Comment,javax.servlet.http.HttpSession)
+2018-08-17 17:07:19.360  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:07:19.360  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.sheng.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2018-08-17 17:07:19.361  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.361  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.361  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:07:19.362  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-17 17:07:19.362  INFO 8464 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-17 17:07:19.385  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:07:19.385  INFO 8464 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:07:19.392  INFO 8464 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-08-17 17:07:19.441  INFO 8464 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-17 17:07:19.608  INFO 8464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-17 17:07:19.625  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-17 17:07:19.625  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-17 17:07:19.628  INFO 8464 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-17 17:07:19.634  INFO 8464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-17 17:07:19.635  INFO 8464 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 2.723 seconds (JVM running for 442.415)
+2018-08-17 17:07:19.637  INFO 8464 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2018-08-17 17:07:21.969  INFO 8464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-17 17:07:21.970  INFO 8464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-17 17:07:21.976  INFO 8464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2018-08-17 17:07:21.979  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:07:21.985  WARN 8464 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 17:07:22.007  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:22.074  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:07:22.080  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:26.213  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 1, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:07:26.221  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:26.255  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/789, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 789, {}]]
+2018-08-17 17:07:26.257  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/14465, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 14465, {}]]
+2018-08-17 17:07:26.263  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:26.276  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:28.733  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 2, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:07:28.741  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:28.807  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/321, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 321, {}]]
+2018-08-17 17:07:28.817  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:32.020  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 1, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:07:32.028  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:32.060  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/789, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 789, {}]]
+2018-08-17 17:07:32.060  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/14465, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 14465, {}]]
+2018-08-17 17:07:32.063  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:32.064  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:34.298  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:07:34.306  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:07:34.359  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:07:34.363  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:12:16.422  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:12:16.431  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:12:16.498  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:12:16.502  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:17.704  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:13:17.710  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:17.745  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:13:17.748  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:34.257  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:13:34.261  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:34.297  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:13:34.300  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:51.629  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:13:51.634  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:13:51.666  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:13:51.669  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:16:08.800  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:16:08.806  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:16:08.852  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:16:08.856  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:16:23.419  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:16:23.425  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:16:23.465  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:16:23.468  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:17.262  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:18:17.289  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:17.332  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:18:17.336  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:20.239  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 1, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:18:20.244  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:20.274  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/321, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 321, {}]]
+2018-08-17 17:18:20.278  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:22.689  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:18:22.695  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:18:22.731  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:18:22.734  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:11.976  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:19:11.985  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:12.093  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:19:12.097  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:14.909  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:14.914  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:14.987  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:14.991  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:15.809  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:19:15.814  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:15.847  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:19:15.850  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:16.841  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:16.861  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:16.900  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:16.904  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:17.460  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/19, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 19, {}]]
+2018-08-17 17:19:17.468  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:17.501  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/123, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]]
+2018-08-17 17:19:17.507  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:18.667  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:18.673  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:18.703  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:18.706  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:19.082  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:19:19.088  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:19.118  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:19:19.122  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:21.023  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:21.029  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:21.059  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:21.062  INFO 8464 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:23.455  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:19:23.462  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:23.498  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:19:23.501  INFO 8464 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:24.939  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/20, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 20, {}]]
+2018-08-17 17:19:24.945  INFO 8464 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:24.977  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:19:24.981  INFO 8464 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:26.528  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:26.536  INFO 8464 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:26.567  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:26.571  INFO 8464 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:31.248  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:31.255  INFO 8464 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:31.336  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:31.340  INFO 8464 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:41.626  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:19:41.632  INFO 8464 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:19:41.730  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:19:41.734  INFO 8464 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:21:51.405  INFO 10804 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 10804 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-08-17 17:21:51.405 DEBUG 10804 --- [restartedMain] com.sheng.BlogApplication                : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-08-17 17:21:51.406  INFO 10804 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: dev
+2018-08-17 17:21:51.449  INFO 10804 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e7c3427: startup date [Fri Aug 17 17:21:51 CST 2018]; root of context hierarchy
+2018-08-17 17:21:52.578  INFO 10804 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$cceec208] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-17 17:21:52.907  INFO 10804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-17 17:21:52.923  INFO 10804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-17 17:21:52.923  INFO 10804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-17 17:21:52.926  INFO 10804 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Local\GitHubDesktop\bin;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Roaming\npm;.]
+2018-08-17 17:21:53.006  INFO 10804 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-17 17:21:53.008  INFO 10804 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1557 ms
+2018-08-17 17:21:53.128  INFO 10804 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-17 17:21:53.132  INFO 10804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-17 17:21:53.132  INFO 10804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-17 17:21:53.132  INFO 10804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-17 17:21:53.132  INFO 10804 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-17 17:21:53.253  INFO 10804 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-17 17:21:53.398  INFO 10804 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-17 17:21:53.431  INFO 10804 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:21:53.439  INFO 10804 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-17 17:21:53.478  INFO 10804 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-17 17:21:53.479  INFO 10804 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-17 17:21:53.505  INFO 10804 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-17 17:21:53.617  INFO 10804 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-17 17:21:54.692  INFO 10804 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-17 17:21:54.990  INFO 10804 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-17 17:21:55.385  INFO 10804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:21:55.644  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2e7c3427: startup date [Fri Aug 17 17:21:51 CST 2018]; root of context hierarchy
+2018-08-17 17:21:55.674  WARN 10804 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-17 17:21:55.708  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.709  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:21:55.709  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.post(com.sheng.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-08-17 17:21:55.709  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.709  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 17:21:55.710  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.input(org.springframework.ui.Model)
+2018-08-17 17:21:55.711  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.711  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.loginPage()
+2018-08-17 17:21:55.711  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2018-08-17 17:21:55.712  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.deleteTag(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.713  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.editTag(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.713  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.editPost(com.sheng.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.714  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.post(com.sheng.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.714  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.input(org.springframework.ui.Model)
+2018-08-17 17:21:55.714  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:21:55.715  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.716  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.editPost(com.sheng.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.716  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.post(com.sheng.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.716  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 17:21:55.716  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:21:55.716  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.input(org.springframework.ui.Model)
+2018-08-17 17:21:55.717  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.sheng.web.CommentController.post(com.sheng.po.Comment,javax.servlet.http.HttpSession)
+2018-08-17 17:21:55.717  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.sheng.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.719  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.719  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 17:21:55.720  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.sheng.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2018-08-17 17:21:55.720  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.720  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 17:21:55.722  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-17 17:21:55.722  INFO 10804 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-17 17:21:55.756  INFO 10804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:21:55.756  INFO 10804 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 17:21:55.769  INFO 10804 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-08-17 17:21:55.888  INFO 10804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-17 17:21:56.185  INFO 10804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-17 17:21:56.209  INFO 10804 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-17 17:21:56.210  INFO 10804 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-17 17:21:56.214  INFO 10804 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-17 17:21:56.239  INFO 10804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-17 17:21:56.242  INFO 10804 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 5.384 seconds (JVM running for 6.621)
+2018-08-17 17:22:02.577  INFO 10804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-17 17:22:02.577  INFO 10804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-17 17:22:02.598  INFO 10804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2018-08-17 17:22:02.627  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/18, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 18, {}]]
+2018-08-17 17:22:02.639  WARN 10804 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 17:22:02.736  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:22:03.123  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:22:03.129  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:22:05.258  INFO 10804 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/7, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 7, {}]]
+2018-08-17 17:22:05.264  WARN 10804 --- [http-nio-8080-exec-5] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 17:22:05.276  INFO 10804 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:05.332  INFO 10804 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/123, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]]
+2018-08-17 17:22:05.339  INFO 10804 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:12.442  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/7, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 7, {}]]
+2018-08-17 17:22:12.450  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:12.489  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/123, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 123, {}]]
+2018-08-17 17:22:12.494  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:13.651  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1, {}]]
+2018-08-17 17:22:13.661  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:13.708  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:22:13.708  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/321, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 321, {}]]
+2018-08-17 17:22:13.715  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:13.715  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:15.176  INFO 10804 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1, {}]]
+2018-08-17 17:22:15.183  INFO 10804 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:15.229  INFO 10804 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/321, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 321, {}]]
+2018-08-17 17:22:15.229  INFO 10804 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:22:15.233  INFO 10804 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:15.233  INFO 10804 --- [http-nio-8080-exec-5] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:16.795  INFO 10804 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 1, {}]]
+2018-08-17 17:22:16.802  INFO 10804 --- [http-nio-8080-exec-6] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:16.838  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/258, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 258, {}]]
+2018-08-17 17:22:16.842  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:16.847  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/321, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 321, {}]]
+2018-08-17 17:22:16.852  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:18.739  INFO 10804 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/2, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 2, {}]]
+2018-08-17 17:22:18.746  INFO 10804 --- [http-nio-8080-exec-9] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:18.780  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/14465, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 14465, {}]]
+2018-08-17 17:22:18.785  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:21.462  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:22:21.472  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:22:21.502  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:22:21.508  INFO 10804 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:22:23.680  INFO 10804 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/11, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 11, {}]]
+2018-08-17 17:22:23.688  INFO 10804 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:22:23.744  INFO 10804 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:22:23.749  INFO 10804 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:28:46.540  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/11, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 11, {}]]
+2018-08-17 17:28:46.544  INFO 10804 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:28:46.590  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/types/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TypeShowController.types, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:28:46.593  INFO 10804 --- [http-nio-8080-exec-8] com.sheng.aspect.LogAspect               : Result : types
+2018-08-17 17:28:48.259  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 17:28:48.266  INFO 10804 --- [http-nio-8080-exec-10] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 17:28:48.311  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 17:28:48.316  INFO 10804 --- [http-nio-8080-exec-2] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 18:29:38.408  INFO 16928 --- [restartedMain] com.sheng.BlogApplication                : Starting BlogApplication on DESKTOP-193NIL2 with PID 16928 (D:\coding\Blog\target\classes started by qzwxs in D:\coding\Blog)
+2018-08-17 18:29:38.409 DEBUG 16928 --- [restartedMain] com.sheng.BlogApplication                : Running with Spring Boot v2.0.3.RELEASE, Spring v5.0.7.RELEASE
+2018-08-17 18:29:38.410  INFO 16928 --- [restartedMain] com.sheng.BlogApplication                : The following profiles are active: dev
+2018-08-17 18:29:38.519  INFO 16928 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6461ffbd: startup date [Fri Aug 17 18:29:38 CST 2018]; root of context hierarchy
+2018-08-17 18:29:39.798  INFO 16928 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a19277a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-08-17 18:29:40.142  INFO 16928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-08-17 18:29:40.161  INFO 16928 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-08-17 18:29:40.161  INFO 16928 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-08-17 18:29:40.164  INFO 16928 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-9.0.4\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Brackets\command;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Git\cmd;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Local\GitHubDesktop\bin;C:\Users\qzwxs\AppData\Local\Microsoft\WindowsApps;C:\Users\qzwxs\AppData\Roaming\npm;.]
+2018-08-17 18:29:40.250  INFO 16928 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-08-17 18:29:40.250  INFO 16928 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1731 ms
+2018-08-17 18:29:40.374  INFO 16928 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-08-17 18:29:40.379  INFO 16928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-08-17 18:29:40.379  INFO 16928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-08-17 18:29:40.379  INFO 16928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-08-17 18:29:40.379  INFO 16928 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-08-17 18:29:40.510  INFO 16928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-08-17 18:29:40.643  INFO 16928 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-08-17 18:29:40.683  INFO 16928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-08-17 18:29:40.696  INFO 16928 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-08-17 18:29:40.754  INFO 16928 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.17.Final}
+2018-08-17 18:29:40.755  INFO 16928 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-08-17 18:29:40.793  INFO 16928 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-08-17 18:29:40.930  INFO 16928 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-08-17 18:29:42.589  INFO 16928 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-08-17 18:29:42.895  INFO 16928 --- [restartedMain] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-08-17 18:29:43.324  INFO 16928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 18:29:43.584  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6461ffbd: startup date [Fri Aug 17 18:29:38 CST 2018]; root of context hierarchy
+2018-08-17 18:29:43.614  WARN 16928 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-08-17 18:29:43.648  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.648  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 18:29:43.648  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.input(org.springframework.ui.Model)
+2018-08-17 18:29:43.649  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.649  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.sheng.vo.BlogQuery,org.springframework.ui.Model)
+2018-08-17 18:29:43.649  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.BlogController.post(com.sheng.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2018-08-17 18:29:43.650  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2018-08-17 18:29:43.650  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.650  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.LoginController.loginPage()
+2018-08-17 18:29:43.652  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.input(org.springframework.ui.Model)
+2018-08-17 18:29:43.652  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 18:29:43.652  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.deleteTag(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.652  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TagController.editTag(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.653  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.editPost(com.sheng.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.653  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TagController.post(com.sheng.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.654  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.655  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 18:29:43.655  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.input(org.springframework.ui.Model)
+2018-08-17 18:29:43.655  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.sheng.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.655  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.editPost(com.sheng.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.655  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.sheng.web.admin.TypeController.post(com.sheng.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-08-17 18:29:43.656  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.sheng.web.ArchiveShowController.archive(org.springframework.ui.Model)
+2018-08-17 18:29:43.658  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.sheng.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.658  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.sheng.web.CommentController.post(com.sheng.po.Comment,javax.servlet.http.HttpSession)
+2018-08-17 18:29:43.658  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2018-08-17 18:29:43.659  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.sheng.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2018-08-17 18:29:43.659  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.659  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.660  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.sheng.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2018-08-17 18:29:43.661  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-08-17 18:29:43.662  INFO 16928 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-08-17 18:29:43.707  INFO 16928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 18:29:43.708  INFO 16928 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-08-17 18:29:43.723  INFO 16928 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2018-08-17 18:29:43.836  INFO 16928 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-08-17 18:29:44.134  INFO 16928 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-08-17 18:29:44.158  INFO 16928 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-08-17 18:29:44.159  INFO 16928 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-08-17 18:29:44.164  INFO 16928 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-08-17 18:29:44.188  INFO 16928 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-08-17 18:29:44.191  INFO 16928 --- [restartedMain] com.sheng.BlogApplication                : Started BlogApplication in 6.271 seconds (JVM running for 7.102)
+2018-08-17 18:29:48.153  INFO 16928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-08-17 18:29:48.153  INFO 16928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-08-17 18:29:48.176  INFO 16928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-08-17 18:29:48.207  INFO 16928 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/-1, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], -1, {}]]
+2018-08-17 18:29:48.218  WARN 16928 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2018-08-17 18:29:48.314  INFO 16928 --- [http-nio-8080-exec-1] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 18:29:48.654  INFO 16928 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/tags/741, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.TagShowController.tags, args=[Page request [number: 0, size 2, sort: updateTime: DESC], 741, {}]]
+2018-08-17 18:29:48.661  INFO 16928 --- [http-nio-8080-exec-3] com.sheng.aspect.LogAspect               : Result : tags
+2018-08-17 18:29:50.340  INFO 16928 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.ArchiveShowController.archive, args=[{}]]
+2018-08-17 18:29:50.420  INFO 16928 --- [http-nio-8080-exec-4] com.sheng.aspect.LogAspect               : Result : archives
+2018-08-17 18:29:50.441 ERROR 16928 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "archives": An error happened during template parsing (template: "class path resource [templates/archives.html]")
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/archives.html]")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:241) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) [thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) [thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) [spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+Caused by: org.attoparser.ParseException: Could not parse as expression: "@{/blog/{id}(id=${blog.id})" (template: "archives" - line 56, col 25)
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:393) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	... 52 common frames omitted
+Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/blog/{id}(id=${blog.id})" (template: "archives" - line 56, col 25)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:103) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	... 54 common frames omitted
+
+2018-08-17 18:29:50.449 ERROR 16928 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/archives.html]")] with root cause
+
+org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "@{/blog/{id}(id=${blog.id})" (template: "archives" - line 56, col 25)
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:103) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:282) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.Model.process(Model.java:290) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateHandlerAdapterMarkupHandler.handleCloseElementEnd(TemplateHandlerAdapterMarkupHandler.java:388) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler$InlineMarkupAdapterPreProcessorHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:322) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.standard.inline.OutputExpressionInlinePreProcessorHandler.handleCloseElementEnd(OutputExpressionInlinePreProcessorHandler.java:220) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.InlinedOutputExpressionMarkupHandler.handleCloseElementEnd(InlinedOutputExpressionMarkupHandler.java:164) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.attoparser.HtmlElement.handleCloseElementEnd(HtmlElement.java:169) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.HtmlMarkupHandler.handleCloseElementEnd(HtmlMarkupHandler.java:412) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupEventProcessorHandler.handleCloseElementEnd(MarkupEventProcessorHandler.java:473) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.ParsingElementMarkupUtil.parseCloseElement(ParsingElementMarkupUtil.java:201) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:725) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.4.RELEASE.jar:2.0.4.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072) ~[thymeleaf-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:354) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:187) ~[thymeleaf-spring5-3.0.9.RELEASE.jar:3.0.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1325) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:866) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-08-17 18:30:42.296  INFO 16928 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Request : [url=http://localhost:8080/archives, ip=0:0:0:0:0:0:0:1, classMethod=com.sheng.web.ArchiveShowController.archive, args=[{}]]
+2018-08-17 18:30:42.305  INFO 16928 --- [http-nio-8080-exec-7] com.sheng.aspect.LogAspect               : Result : archives
