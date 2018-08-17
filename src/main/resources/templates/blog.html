@@ -444,12 +444,12 @@ h5,h6{font-size:1em;}
                 <div class="ui purple basic label" th:each="tag : ${blog.tags}" th:text="${tag.name}">美劇心得</div>
             </div>
             <!---讚賞---->
-            <div class="ui center aligned basic segment">
+            <div class="ui center aligned basic segment" th:if="${blog.appreciation}">
                 <button class="ui purple basic circular button">分享</button>
             </div>
         </div>
         <!--message-->
-        <div class="ui attached positive message">
+        <div class="ui attached positive message" th:if="${blog.shareStatement}">
             <div class="ui middle aligned grid">
                 <div class="eleven wide column">
                     <ui class="list">
@@ -465,7 +465,7 @@ h5,h6{font-size:1em;}
             </div>
         </div>
         <!--footer留言列表-->
-        <div class="ui bottom attached segment">
+        <div class="ui bottom attached segment" th:if="${blog.commentStatus}">
             <div id="comment-container" class="ui purple segment">
                 <div th:fragment="commentList">
                     <div class="ui threaded comments" style="max-width: 100%;">
