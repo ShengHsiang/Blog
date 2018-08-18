@@ -14,7 +14,7 @@
 <nav th:replace="_fragments :: menu(5)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui purple header item">Blog</h2>
+            <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
@@ -42,7 +42,7 @@
             <!--左邊內容-->
             <div class="eleven wide column">
                 <div class="ui segment">
-                    <img src="../static/images/ROME.jpg" alt="" class="ui rounded image" width="800px">
+                    <img src="../static/images/ROME.jpg" th:src="@{/images/ROME.jpg}" alt="" class="ui rounded image" width="800px">
                 </div>
             </div>
             <!--右邊內容-->

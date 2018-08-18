@@ -14,7 +14,7 @@
     <nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
-                <h2 class="ui purple header item">Blog</h2>
+                <h2 class="ui teal header item">Blog</h2>
                 <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
                 <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
                 <a href="#" class="active item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
@@ -41,7 +41,7 @@
             <div class="ui top attached segment">
                 <div class="ui middle aligned two column grid">
                     <div class="column">
-                        <h3 class="ui purple header">搜尋結果</h3>
+                        <h3 class="ui teal header">搜尋結果</h3>
                     </div>
                     <div class="column right aligned">
                         共
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!--content-->
-            <div class="ui top attached purple segment">
+            <div class="ui top attached teal segment">
                 <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large" th:each="blog : ${page.content}">
                     <div class="ui middle aligned mobile reversed stackable grid">
 
@@ -80,7 +80,7 @@
                                 </div>
                                 <div class="right aligned five wide column">
                                     <a href="#" target="_blank"
-                                       class="ui purple basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
+                                       class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
                                 </div>
                             </div>
 
@@ -101,11 +101,11 @@
                 <div class="ui middle aligned two column grid">
                     <div class="column">
                         <a href="#" th:href="@{/(page=${page.number}-1)}" th:unless="${page.first}"
-                           class="ui mini purple basic button">上一頁</a>
+                           class="ui mini teal basic button">上一頁</a>
                     </div>
                     <div class="column right aligned">
                         <a href="#" th:href="@{/(page=${page.number}+1)}" th:unless="${page.last}"
-                           class="ui mini purple basic button">下一頁</a>
+                           class="ui mini teal basic button">下一頁</a>
                     </div>
                 </div>
             </div>

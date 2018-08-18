@@ -17,7 +17,7 @@
 <nav th:replace="_fragments :: menu(0)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui purple header item">Blog</h2>
+            <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
@@ -48,7 +48,7 @@
                          class="ui avatar image" width="100" height="100">
                 </div>
                 <div class="item">
-                    <a href="#" class="header" th:text="${blog.user.nickname}">Emma</a>
+                    <a href="#" class="header" th:text="${blog.user.nickname}">Sheng</a>
                 </div>
                 <div class="item">
                     <i class="calendar icon"></i> <span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2018-06-06</span>
@@ -441,11 +441,11 @@ h5,h6{font-size:1em;}
 
             <!---標籤---->
             <div class="m-padded-rl-huge-responsive">
-                <div class="ui purple basic label" th:each="tag : ${blog.tags}" th:text="${tag.name}">美劇心得</div>
+                <div class="ui teal basic label" th:each="tag : ${blog.tags}" th:text="${tag.name}">美劇心得</div>
             </div>
             <!---讚賞---->
             <div class="ui center aligned basic segment" th:if="${blog.appreciation}">
-                <button class="ui purple basic circular button">分享</button>
+                <button class="ui teal basic circular button">分享</button>
             </div>
         </div>
         <!--message-->
@@ -466,7 +466,7 @@ h5,h6{font-size:1em;}
         </div>
         <!--footer留言列表-->
         <div class="ui bottom attached segment" th:if="${blog.commentStatus}">
-            <div id="comment-container" class="ui purple segment">
+            <div id="comment-container" class="ui teal segment">
                 <div th:fragment="commentList">
                     <div class="ui threaded comments" style="max-width: 100%;">
                         <h3 class="ui dividing header">評論</h3>
@@ -477,7 +477,7 @@ h5,h6{font-size:1em;}
                             <div class="content">
                                 <a class="author">
                                     <span th:text="${comment.nickname}">肥宅</span>
-                                    <div class="ui mini basic purple left pointing label m-padded-mini" th:if="${comment.adminComment}">管理員</div>
+                                    <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${comment.adminComment}">管理員</div>
                                 </a>
                                 <div class="metadata">
                                     <span class="date" th:text="${#dates.format(comment.createTime, 'yyyy-MM-dd HH:mm')}">今天 5:42PM</span>
@@ -495,8 +495,8 @@ h5,h6{font-size:1em;}
                                     <div class="content">
                                         <a class="author">
                                             <span th:text="${reply.nickname}">小紅</span>
-                                            <div class="ui mini basic purple left pointing label m-padded-mini" th:if="${reply.adminComment}">管理員</div>
-                                            &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-purple">@小白</span>
+                                            <div class="ui mini basic teal left pointing label m-padded-mini" th:if="${reply.adminComment}">管理員</div>
+                                            &nbsp;<span th:text="|@ ${reply.parentComment.nickname}|" class="m-teal">@小白</span>
                                         </a>
                                         <div class="metadata">
                                             <span class="date" th:text="${#dates.format(reply.createTime, 'yyyy-MM-dd HH:mm')}">今天 5:42PM</span>
@@ -584,7 +584,7 @@ h5,h6{font-size:1em;}
                         </div>
                     </div>
                     <div class="field m-mobile-wide m-margin-bottom-small">
-                        <button id="commentpost-btn" type="button" class="ui purple button m-mobile-wide"><i class="edit icon"></i>提交</button>
+                        <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>提交</button>
                     </div>
                 </div>
             </div>
@@ -594,8 +594,8 @@ h5,h6{font-size:1em;}
 <!--右下角快捷組合-->
 <div id="toolbar" class="m-right-bottom m-fixed m-padded" style="display: none">
     <div class="ui vertical icon buttons">
-        <button type="button" class="ui toc purple button">目錄</button>
-        <a href="#comment-container" class="ui purple button">留言</a>
+        <button type="button" class="ui toc teal button">目錄</button>
+        <a href="#comment-container" class="ui teal button">留言</a>
         <button class="ui wechat icon button"><i class="weixin icon"></i></button>
         <a href="#" class="ui icon button"><i class="chevron up icon"></i></a>
     </div>

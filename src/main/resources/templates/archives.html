@@ -14,7 +14,7 @@
 <nav th:replace="_fragments :: menu(4)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui purple header item">Blog</h2>
+            <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
@@ -41,7 +41,7 @@
         <div class="ui top attached padded segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <h3 class="ui purple header">歸檔</h3>
+                    <h3 class="ui teal header">歸檔</h3>
                 </div>
                 <div class="column right aligned">
                     共
@@ -55,39 +55,39 @@
         <div class="ui fluid vertical menu">
             <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${item.value}">
                     <span>                    
-                        <i class="mini purple circle icon"></i><span th:text="${blog.title}">漢娜的遺言</span>
-                        <div class="ui purple basic label m-padded-tiny" th:text="${#dates.format(blog.updateTime, 'MMMdd')}">9月03日</div>
+                        <i class="mini teal circle icon"></i><span th:text="${blog.title}">漢娜的遺言</span>
+                        <div class="ui teal basic label m-padded-tiny" th:text="${#dates.format(blog.updateTime, 'MMMdd')}">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny" th:text="${blog.flag}">原創</div>
+                <div class="ui orange basic label m-padded-tiny" th:text="${blog.flag}">原創</div>
             </a>
             <!--/*-->
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <!--*/-->
         </div>
@@ -97,38 +97,38 @@
         <div class="ui fluid vertical menu">
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
             <a href="#" target="_blank" class="item">
                     <span>                    
-                        <i class="mini purple circle icon"></i>漢娜的遺言
-                        <div class="ui purple basic label m-padded-tiny">9月03日</div>
+                        <i class="mini teal circle icon"></i>漢娜的遺言
+                        <div class="ui teal basic label m-padded-tiny">9月03日</div>
                     </span>
-                <div class="ui teal basic label m-padded-tiny">原創</div>
+                <div class="ui orange basic label m-padded-tiny">原創</div>
             </a>
         </div>
         <!--*/-->
@@ -137,10 +137,10 @@
         <div class="ui bottom attached segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <a href="#" class="ui mini purple basic button">上一頁</a>
+                    <a href="#" class="ui mini teal basic button">上一頁</a>
                 </div>
                 <div class="column right aligned">
-                    <a href="#" class="ui mini purple basic button">下一頁</a>
+                    <a href="#" class="ui mini teal basic button">下一頁</a>
                 </div>
             </div>
         </div>

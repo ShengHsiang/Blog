@@ -16,7 +16,7 @@
 <nav th:fragment="menu(n)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui purple header item">Blog</h2>
+            <h2 class="ui teal header item">Blog</h2>
             <a href="#" th:href="@{/}" class="item m-mobile-hide m-item" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>首頁</a>
             <a href="#" th:href="@{/types/-1}" class="item m-mobile-hide m-item" th:classappend="${n==2} ? 'active'"><i class="mini folder icon"></i>分類</a>
             <a href="#" th:href="@{/tags/-1}" class="item m-mobile-hide m-item" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>標籤</a>

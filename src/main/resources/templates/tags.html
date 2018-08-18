@@ -14,7 +14,7 @@
 <nav th:replace="_fragments :: menu(3)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small">
     <div class="ui container">
         <div class="ui inverted secondary stackable menu">
-            <h2 class="ui purple header item">Blog</h2>
+            <h2 class="ui teal header item">Blog</h2>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini home icon"></i>首頁</a>
             <a href="#" class="item m-mobile-hide m-item"><i class="mini folder icon"></i>分類</a>
             <a href="#" class="active item m-mobile-hide m-item"><i class="mini tags icon"></i>標籤</a>
@@ -41,7 +41,7 @@
         <div class="ui top attached segment">
             <div class="ui middle aligned two column grid">
                 <div class="column">
-                    <h3 class="ui purple header">標籤</h3>
+                    <h3 class="ui teal header">標籤</h3>
                 </div>
                 <div class="column right aligned">
                     共 <h2 class="ui orange header m-inline-block m-text-thin" th:text="| ${#arrays.length(tags)} |"> 5 </h2> 個
@@ -49,13 +49,13 @@
             </div>
         </div>
         <div class="ui bottom attached segment m-padded-tb-large">
-            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic large left pointing label m-margin-tb-tiny" th:classappend="${tag.id == activeTagId} ? 'purple'"
+            <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic large left pointing label m-margin-tb-tiny" th:classappend="${tag.id == activeTagId} ? 'teal'"
                th:each="tag : ${tags}"><span th:text="${tag.name}">美劇心得</span>
                 <div class="detail" th:text="${#arrays.length(tag.blogs)}">16</div>
             </a>
         </div>
         <!--content-->
-        <div class="ui top attached purple segment">
+        <div class="ui top attached teal segment">
             <div class="ui vertical segment m-padded-rl-large-responsive m-padded-tb-large" th:each="blog : ${page.content}">
                 <div class="ui middle aligned mobile reversed stackable grid">
 
@@ -74,7 +74,7 @@
                                                  width="100" height="100">
                                         </div>
                                         <div class="item">
-                                            <a href="#" class="header" th:text="${blog.user.nickname}">Emma</a>
+                                            <a href="#" class="header" th:text="${blog.user.nickname}">Sheng</a>
                                         </div>
                                         <div class="item">
                                             <i class="calendar icon"></i><span th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2018-06-06</span>
@@ -86,13 +86,13 @@
                                 </div>
                                 <div class="right aligned five wide column">
                                     <a href="#" th:href="@{/types/{id}(id=${blog.type.id})}"
-                                       class="ui purple basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
+                                       class="ui teal basic label m-padded-tiny m-text-thin" th:text="${blog.type.name}">美劇心得</a>
                                 </div>
                             </div>
                             <!--標籤-->
                             <div class="row">
                                 <div class="column">
-                                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic left pointing label m-padded-small m-text-thin" th:classappend="${tag.id == activeTagId} ? 'purple'"
+                                    <a href="#" th:href="@{/tags/{id}(id=${tag.id})}" class="ui basic left pointing label m-padded-small m-text-thin" th:classappend="${tag.id == activeTagId} ? 'teal'"
                                        th:each="tag : ${blog.tags}" th:text="${tag.name}">台北居酒屋</a>
                                 </div>
                             </div>
@@ -115,11 +115,11 @@
             <div class="ui middle aligned two column grid">
                 <div class="column">
                     <a href="#" th:href="@{/tags/{id}(id=${activeTagId},page=${page.number}-1)}" th:unless="${page.first}"
-                       class="ui mini purple basic button">上一頁</a>
+                       class="ui mini teal basic button">上一頁</a>
                 </div>
                 <div class="column right aligned">
                     <a href="#" th:href="@{/tags/{id}(id=${activeTagId},page=${page.number}+1)}" th:unless="${page.last}"
-                       class="ui mini purple basic button">下一頁</a>
+                       class="ui mini teal basic button">下一頁</a>
                 </div>
             </div>
         </div>
